@@ -1,0 +1,5 @@
+SELECT id, name
+FROM customers
+WHERE id not in (
+SELECT distinct id_customers
+FROM locations);
